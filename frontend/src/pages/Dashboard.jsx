@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import { CgMenuLeft } from "react-icons/cg";
-import { GoHome } from "react-icons/go";
+ import { GoHome } from "react-icons/go";
 import { BsTags, BsWallet, BsPerson, BsCalendar, BsTicketDetailed, BsFileBarGraph, BsChat } from "react-icons/bs";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { MdReviews } from "react-icons/md";
@@ -23,8 +22,7 @@ import logo from "../assets/logo.jpeg";
 const Dashboard = () => {
   const [open, setOpen] = useState(window.innerWidth >= 768);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [dropdownOpen, setDropdownOpen] = useState({});
-
+ 
   useEffect(() => {
     const handleResize = () => {
       const mobile = window.innerWidth < 768;

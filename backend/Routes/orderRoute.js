@@ -37,7 +37,7 @@ const router = express.Router();
 router.get('/', async (req, res) => {
     try {
         const orders = await Order.find();
-        console.log('Fetched orders:', orders); // Log the fetched orders
+        console.log('Fetched orders:', orders); 
         res.json(orders);
     } catch (error) {
         console.error('Error fetching orders:', error);
